@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-slate-50 text-slate-900;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+/* Markdown rendered inside chat bubbles */
+.markdown-body h3 {
+  @apply text-xs font-black text-legal-muted uppercase tracking-widest mt-4 mb-2 flex items-center gap-2;
+}
+.markdown-body h3::before {
+  content: '';
+  @apply block w-0.5 h-3.5 bg-current rounded-full;
+}
+.markdown-body p {
+  @apply mb-2 leading-relaxed text-sm;
+}
+.markdown-body table {
+  @apply w-full text-xs border-collapse my-3 rounded-lg overflow-hidden;
+}
+.markdown-body th {
+  @apply bg-legal-primary/10 text-legal-primary font-bold uppercase tracking-wider px-3 py-2 text-left;
+}
+.markdown-body td {
+  @apply px-3 py-2 border-t border-slate-100;
+}
+.markdown-body ul {
+  @apply list-disc list-inside space-y-1 mb-2 text-sm;
+}
+.markdown-body strong {
+  @apply font-bold;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-thumb {
+  @apply bg-legal-primary/20 rounded-full;
+}

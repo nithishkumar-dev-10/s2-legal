@@ -21,6 +21,12 @@ A modular AI system that:
 
 ---
 
+## ⚙️ Tech Stack
+- Frontend: HTML, CSS, JavaScript  
+- Backend: FastAPI (Python)  
+
+---
+
 ## 🎯 Focus
 > Built for accuracy, reliability, and safety in legal workflows — not just automation.
 
