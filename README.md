@@ -2,6 +2,7 @@
 
 <div align="center">
 
+
 ![LexTrack-AI](https://capsule-render.vercel.app/api?type=venom&color=0:020817,50:0c1a3a,100:0a4a6e&height=200&section=header&text=LexTrack-AI&fontSize=60&fontColor=e2f4f7&fontAlignY=40&desc=Safety-First%20Multi-Agent%20Legal%20Intelligence&descColor=7ecfde&descSize=18&animation=fadeIn)
 
 [![Python](https://img.shields.io/badge/Python-020817?style=flat-square&logo=python&logoColor=7ecfde)](https://python.org)
