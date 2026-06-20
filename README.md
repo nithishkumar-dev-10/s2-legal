@@ -1,235 +1,169 @@
-# ⚖️ LexTrack-AI — Smart Legal AI Agent System
-
 <div align="center">
 
+# ⚖️ S2 — Smart Legal AI Agent System
 
-![LexTrack-AI](https://capsule-render.vercel.app/api?type=venom&color=0:020817,50:0c1a3a,100:0a4a6e&height=200&section=header&text=LexTrack-AI&fontSize=60&fontColor=e2f4f7&fontAlignY=40&desc=Safety-First%20Multi-Agent%20Legal%20Intelligence&descColor=7ecfde&descSize=18&animation=fadeIn)
+### *LexTrack-AI*
 
-[![Python](https://img.shields.io/badge/Python-020817?style=flat-square&logo=python&logoColor=7ecfde)](https://python.org)
-[![FastAPI](https://img.shields.io/badge/FastAPI-020817?style=flat-square&logo=fastapi&logoColor=7ecfde)](https://fastapi.tiangolo.com)
-[![LLM Powered](https://img.shields.io/badge/LLM-Powered-020817?style=flat-square&logoColor=7ecfde)](#)
-[![Multi Agent](https://img.shields.io/badge/7-Agents-0a4a6e?style=flat-square)](#architecture)
-[![Hackathon](https://img.shields.io/badge/🥇-1st%20Prize%20Winner-gold?style=flat-square)](#origin)
-[![License](https://img.shields.io/badge/License-MIT-020817?style=flat-square)](LICENSE)
+**A safety-first, multi-agent legal assistant built to reduce human error, improve legal awareness, and prevent costly procedural mistakes.**
 
-**An intelligent, safety-first legal assistant designed to reduce human error, improve legal awareness, and prevent costly procedural mistakes.**
+<br/>
 
-[Architecture](#architecture) · [Agents](#the-7-agents) · [Setup](#setup) · [Origin](#origin)
+🏆 **1st Place — Epochon 2.0 Hackathon** 🏆
+
+<sub>Built in 24 hours · 7-agent architecture · Awarded for production-grade design & real-world applicability</sub>
+
+<p>
+<img src="https://img.shields.io/badge/🥇_Winner-Epochon_2.0-FFD700?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Agents-7-blueviolet?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Build_Time-24h-orange?style=for-the-badge" />
+</p>
+
+<p>
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
+<img src="https://img.shields.io/badge/Gemini_API-4285F4?style=flat-square&logo=googlegemini&logoColor=white" />
+<img src="https://img.shields.io/badge/Multi--Agent-LLM-success?style=flat-square" />
+</p>
 
 </div>
 
 ---
 
-## 🏆 Origin & Hackathon Story
+## 🏆 Hackathon Win
 
-LexTrack-AI was originally built during **Epochon Hackathon** — a 24-hour team sprint — and **won First Prize (Gold)** for its production-grade architecture and real-world applicability.
+> **Epochon 2.0** — built from scratch in **24 hours**, S2 took **1st Place** for its production-grade multi-agent architecture and real-world legal applicability. Judged not just on the demo, but on whether it could survive contact with an actual legal workflow.
 
-The project was conceived, architected, and led by **Nithish Kumar S** (team lead), and built collaboratively with the team under a shared team repository during the hackathon.
-
-Following the win, the project was officially **handed over to Nithish Kumar S** as team leader for continued development, scalability improvements, and long-term maintenance. This repository is the independently maintained version of that original build — extended with cleaner code organization, improved modularity, and a focus on production readiness.
-
-> *What started as a 24-hour sprint is now being engineered into a real product.*
+What set it apart wasn't a single clever feature — it was the **Self-Doubt Engine**: a system that's allowed to say "I'm not confident enough to decide this" and hand the case to a human. In a domain where a wrong answer has real consequences, that restraint *was* the innovation.
 
 ---
 
-## 🧠 What is LexTrack-AI?
+## 🎯 Why It Exists
 
-LexTrack-AI is a **7-agent legal AI system** built with a human-in-the-loop philosophy. Instead of blindly automating legal decisions, it combines AI intelligence with built-in self-awareness — explicitly refusing to act when it isn't confident enough.
-
-The core design principle: **safety over speed**.
-
----
-
-## 🏗️ Architecture
-
-```
-┌─────────────────────────────────────────────────────────┐
-│                    LexTrack-AI System                   │
-├─────────────────────────────────────────────────────────┤
-│                                                         │
-│   User Input ──► Self-Doubt Engine ──► Route to Agent   │
-│                        │                               │
-│              Confidence Score (0–100)                  │
-│                  Low ──► Escalate                       │
-│                  High ──► Proceed                       │
-│                                                         │
-├──────────┬──────────┬──────────┬──────────┬────────────┤
-│ Research │Document  │Procedure │Compliance│   Smart    │
-│  Agent   │Analysis  │Guidance  │Monitoring│   Scribe   │
-│          │  Agent   │  Agent   │  Agent   │            │
-└──────────┴──────────┴──────────┴──────────┴────────────┘
-                              │
-                   Smart Hearing Scheduler
-```
-
-**Backend:** FastAPI (Python) — RESTful agent routing, modular design
-**AI Layer:** LLM-based processing per agent
-**Frontend:** HTML, CSS, JavaScript, TypeScript
-**Deployment:** Shell + Batch scripting for cross-platform startup
+Legal mistakes are expensive — missed deadlines, outdated case law, one-sided contract clauses nobody caught, petitions rejected over a technicality. S2 is built around a single idea: **automate the grunt work, but never automate the judgment call**. Every agent in the system is designed to assist a human, flag risk, and step back the moment confidence drops.
 
 ---
 
 ## 🤖 The 7 Agents
 
-### 1. 🔍 Smart Research Agent
-Searches IPC, BNS, and case laws to find the exact legal sections required for a given situation.
+<table>
+<tr>
+<td width="50%" valign="top">
 
-**Edge over standard search:**
-- Cross-references repealed laws with current statutes
-- Warns if a cited case law has been overruled or weakened
-- Prevents reliance on outdated or invalid legal provisions
+### 🔍 1. Smart Research Agent
+Searches IPC, BNS, and case law to surface the exact legal sections relevant to a situation.
 
----
+**The S2 Edge**
+- Cross-references repealed laws against current statutes
+- Flags overruled or weakened case law
+- Blocks reliance on outdated legal provisions
 
-### 2. 📄 Document Analysis Agent
-Analyzes long legal documents and contracts to detect hidden, unfair, or risky clauses.
+</td>
+<td width="50%" valign="top">
 
-**Edge over standard review:**
-- Assigns a **risk score** to every clause
-- Flags potentially illegal or one-sided terms
-- Summarizes complex clauses into plain English
+### 📄 2. Document Analysis Agent
+Scans long contracts and legal documents to surface hidden or risky clauses.
 
----
+**The S2 Edge**
+- Risk-scores every clause
+- Flags illegal or one-sided terms
+- Translates dense legal language into plain English
 
-### 3. 🗺️ Procedure Guidance Agent
-Provides a step-by-step roadmap for filing cases, including deadlines and required forms.
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-**Edge over generic guidance:**
-- Verifies jurisdiction based on user location
-- Prevents missed deadlines
-- Ensures filings are made in the correct court
+### 🧭 3. Procedure Guidance Agent
+Generates a step-by-step roadmap for filing a case — deadlines, forms, everything.
 
----
+**The S2 Edge**
+- Verifies jurisdiction from user location
+- Prevents missed filing deadlines
+- Ensures filings land in the correct court
 
-### 4. 📊 Compliance Monitoring Agent
-Continuously tracks regulatory changes relevant to businesses and individuals.
+</td>
+<td width="50%" valign="top">
 
-**Edge over manual tracking:**
-- Alerts users about new or updated compliance rules
+### 📊 4. Compliance Monitoring Agent
+Continuously tracks regulatory changes relevant to a business or individual.
+
+**The S2 Edge**
+- Alerts on new or updated compliance rules
 - Predicts potential financial penalties for non-compliance
-- Maintains a log of compliant actions for audits
+- Maintains an audit-ready log of compliant actions
 
----
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-### 5. ✍️ Smart Scribe (Petition Generator)
+### ✍️ 5. Smart Scribe — Petition Generator
 Converts user-provided facts into a court-ready legal petition.
 
-**Edge over template-based drafting:**
-- Refuses to draft documents if facts are contradictory
+**The S2 Edge**
+- Refuses to draft if the facts are contradictory
 - Detects missing evidence before submission
-- Reduces chances of petition rejection
+- Cuts petition rejection rates
+
+</td>
+<td width="50%" valign="top">
+
+### 🧠 6. Self-Doubt Engine — *Core Safety Logic*
+Computes a 0–100 confidence score from data completeness and case risk.
+
+**The S2 Edge**
+- Explicitly declines low-confidence decisions
+- Escalates high-risk cases to a human professional
+- Hard-blocks blind automation in sensitive legal matters
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 📅 7. Smart Hearing Scheduler
+Tracks hearing dates and keeps every relevant party notified.
+
+**The S2 Edge**
+- Automated reminders to lawyers and clients
+- Triggers a critical document review 48 hours pre-hearing
+- Surfaces missing filings or evidence in advance
+
+</td>
+<td width="50%" valign="top">
+
+### 🛡️ Design Philosophy
+Every agent above answers to the **Self-Doubt Engine**. None of them are allowed to act with confidence they haven't earned — that's the system's actual core, not a feature on top of it.
+
+</td>
+</tr>
+</table>
 
 ---
 
-### 6. 🧠 Self-Doubt Engine *(Core Safety Logic)*
-Calculates a **confidence score (0–100)** based on data completeness and risk level. This is the backbone of the system's safety model.
+## 🧠 What Makes It Different
 
-**Why this matters:**
-- Explicitly declines decisions when confidence is low
-- Escalates high-risk cases to human professionals
-- Prevents blind automation in sensitive legal matters
+Most legal-AI demos optimize for looking impressive. S2 was built to optimize for **not getting someone in legal trouble**:
 
-> *Every agent decision passes through the Self-Doubt Engine before execution.*
-
----
-
-### 7. 📅 Smart Hearing Scheduler
-Tracks court hearing dates and notifies all relevant parties.
-
-**Edge over manual scheduling:**
-- Sends automated reminders to lawyers and clients
-- Triggers a critical document review 48 hours before hearings
-- Identifies missing filings or evidence in advance
-
----
-
-## ⚙️ Tech Stack
-
-| Layer | Technology |
+| Typical Legal AI | S2 |
 |---|---|
-| Backend | Python, FastAPI |
-| AI / LLM | LLM-based agent processing |
-| Frontend | HTML, CSS, JavaScript, TypeScript |
-| Startup | Shell script (Linux/Mac), Batch script (Windows) |
+| Always gives an answer | Can say *"not confident enough"* and escalate |
+| Cites case law blindly | Checks if it's been overruled first |
+| Drafts whatever you give it | Refuses to draft on contradictory facts |
+| One model, one shot | 7 specialized agents, each owning one failure mode |
 
 ---
 
-## 🚀 Setup
+## 💼 Resume Description
 
-### Prerequisites
-- Python 3.10+
-- pip
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/nithishkumar-dev-10/lextrack-ai.git
-cd lextrack-ai
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Copy environment variables
-cp .env.example .env
-# Add your API keys to .env
-
-# Run the backend
-cd backend
-uvicorn main:app --reload
-```
-
-**Or use the startup scripts:**
-```bash
-# Linux / Mac
-./start.sh
-
-# Windows
-start.bat
-```
-
-Backend runs at: `http://localhost:8000`
-
----
-
-## 🌿 What Changed from Hackathon Version
-
-| Hackathon Build | This Version |
-|---|---|
-| Single monolithic script | Modular agent architecture |
-| Hardcoded values | Config-driven via `.env` |
-| No error handling | Graceful fallbacks per agent |
-| Team repo, shared ownership | Independently maintained |
-| Prototype-grade code | Production-oriented structure |
-
----
-
-## 🔭 Roadmap
-
-- [ ] Deploy backend to Render / Railway
-- [ ] Add agent-level logging and tracing
-- [ ] Build REST API documentation (Swagger auto-generated via FastAPI)
-- [ ] Add authentication layer for multi-user access
-- [ ] Expand Self-Doubt Engine with calibrated confidence thresholds
-- [ ] Connect to live legal databases (IndianKanoon API)
-
----
-
-## 👨‍💻 Author
-
-**Nithish Kumar S** — Team Lead, Architect, Primary Developer
-
-[![Portfolio](https://img.shields.io/badge/Portfolio-020817?style=flat-square&logoColor=7ecfde)](https://nithishkumar-dev-10.github.io/nithish-dev-portfolio/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0c1a3a?style=flat-square&logo=linkedin&logoColor=7ecfde)](https://www.linkedin.com/in/nithish-kumar-saravanan10/)
-[![GitHub](https://img.shields.io/badge/GitHub-0a4a6e?style=flat-square&logo=github&logoColor=e2f4f7)](https://github.com/nithishkumar-dev-10)
-[![Email](https://img.shields.io/badge/Email-020817?style=flat-square&logo=gmail&logoColor=7ecfde)](mailto:nithishkumar.dev10@gmail.com)
-
-*Open to AI/ML engineering internships and collaborations.*
+> LexTrack-AI (S2) — Smart Legal AI Agent System. Built a 7-agent, safety-first legal assistant in 24 hours at Epochon 2.0, winning **1st Place**. Featured a Self-Doubt Engine for confidence-gated decision-making, automated petition generation, contract risk analysis, and compliance monitoring — architected with Python, FastAPI, and the Gemini API.
 
 ---
 
 <div align="center">
 
-![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:0a4a6e,50:0c1a3a,100:020817&height=110&section=footer&animation=fadeIn)
+**Built by [Nithish Kumar](https://github.com/nithishkumar-dev-10) at Epochon 2.0**
+
+🥇 *1st Place Winner*
 
 </div>
